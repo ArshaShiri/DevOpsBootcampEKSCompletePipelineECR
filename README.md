@@ -27,3 +27,6 @@ We then create a credential on Jenkins. The username for this credential is AWS 
     --docker-server=849690659475.dkr.ecr.eu-central-1.amazonaws.com \
     --docker-username=AWS \
     --docker-password={password output from the command above}
+
+
+We can then run the pipeline.
