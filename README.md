@@ -20,3 +20,10 @@ We can use the `view push commands` section of the ECR to help us:
 We then create a credential on Jenkins. The username for this credential is AWS as can be seen in the command from the `view push commands` section. The password then can be copied from the output of the command above.
 
 ![image](https://user-images.githubusercontent.com/18715119/235351490-5bf4e26e-d6fc-4de5-b830-6f846f0baece.png)
+
+## Create Secret for AWS ECR
+
+    kubectl create secret docker-registry aws-registry-key \
+    --docker-server=849690659475.dkr.ecr.eu-central-1.amazonaws.com \
+    --docker-username=AWS \
+    --docker-password={password output from the command above}
